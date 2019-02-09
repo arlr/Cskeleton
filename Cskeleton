@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#Declaration des variables : 
+
+user="$USER"
+
+date=`date +"%d/%m/%y  %H:%M:%S"`
+
+#debut du script :
+
+echo "Quel est le nom du fichier .c ? : "
+
+read nom
+
+nomf=$nom.c
+
+touch $nomf
+contenu="
+/*=============================================================================================\r
+\r
+\t\t\t Fichier : $nom \t Créé par : $user\r
+\t\t\t\t Le : $date \r
+\r
+=============================================================================================*/\r
+\n
+#include <stdio.h>\n
+int main(){\r\t
+\t
+\treturn 0;\r
+}
+"
+echo -e "$contenu">> $nomf
+
+
