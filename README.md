@@ -1,2 +1,2 @@
 # Cskeleton
-Creat basics fonctions and include for c project
+Create an basic C file with header and basic includes.
